@@ -1,9 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
+import Head from 'next/head';
+import Image from 'next/image';
+import { Inter } from '@next/font/google';
+import styles from '@/styles/Home.module.css';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
@@ -40,7 +40,10 @@ export default function Home() {
         </div>
 
         <div className={styles.center}>
-          <Image
+          <button className="w-24 text-black bg-gray-200 rounded drop-shadow-xl">
+            Test
+          </button>
+          {/* <Image
             className={styles.logo}
             src="/next.svg"
             alt="Next.js Logo"
@@ -56,7 +59,7 @@ export default function Home() {
               height={31}
               priority
             />
-          </div>
+          </div> */}
         </div>
 
         <div className={styles.grid}>
@@ -66,6 +69,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
+            <h2 className="btn rounded drop-shadow-xl">Test</h2>
             <h2 className={inter.className}>
               Docs <span>-&gt;</span>
             </h2>
@@ -98,7 +102,7 @@ export default function Home() {
               Templates <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
+              {/* Discover and deploy boilerplate example Next.js&nbsp;projects. */}
             </p>
           </a>
 
@@ -119,5 +123,5 @@ export default function Home() {
         </div>
       </main>
     </>
-  )
+  );
 }
