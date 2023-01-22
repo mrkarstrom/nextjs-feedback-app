@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 function FeedbackStats({feedback}) {
     // Calculate ratings avg
     let average = feedback.reduce((acc, cur) => {
@@ -13,5 +14,10 @@ function FeedbackStats({feedback}) {
     </div>
   )
 }
+
+FeedbackStats.propTypes = {
+    feedback: PropTypes.array.isRequired
+}
+
 
 export default FeedbackStats

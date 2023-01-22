@@ -5,6 +5,7 @@ import FeedbackData from '../data/FeedbackData';
 import FeedbackList from '../components/FeedbackList.jsx';
 import Card from '../components/shared/Card.jsx';
 import FeedbackStats from '../components/FeedbackStats';
+import FeedbackForm from '../components/FeedbackForm';
 
 export default function Home() {
   const [feedback, setFeedback] = useState(FeedbackData);
@@ -26,6 +27,7 @@ export default function Home() {
       <Header />
       <main>
         <div className="container">
+          <FeedbackForm />
           <Card reverse>
             <h2>This is a Card Component</h2>
           </Card>
