@@ -165,11 +165,11 @@ input:focus {
 }
 
 .btn-primary {
-  background-color: #202142;
+  background-color: var(--vueBlue);
 }
 
 .btn-secondary {
-  background: #ff6a95;
+  background: var(--vueGreen);
 }
 
 .btn:hover {
