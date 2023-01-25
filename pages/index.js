@@ -10,6 +10,8 @@ import FeedbackForm from '../components/FeedbackForm';
 export default function Home() {
   const [feedback, setFeedback] = useState(FeedbackData);
 
+  const addFeedback = (newFeedback) => {};
+
   const deleteFeedback = (id) => {
     if (window.confirm('Are you sure you want to delete?')) {
       setFeedback(feedback.filter((item) => item.id !== id));
@@ -27,7 +29,7 @@ export default function Home() {
       <Header />
       <main>
         <div className="container">
-          <FeedbackForm />
+          <FeedbackForm handleAdd={addFeedback} />
           <Card reverse>
             <h2>This is a Card Component</h2>
           </Card>
