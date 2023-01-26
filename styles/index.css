@@ -36,7 +36,7 @@ header {
   height: 70px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-bottom: 30px;
 }
@@ -202,7 +202,7 @@ input:focus {
 }
 
 /* FIX: Remove position: absolute to keep about icon at the bottom of the
- * document */
+  document */
 .about-link a {
   color: #fff;
   cursor: pointer;
@@ -223,6 +223,10 @@ input:focus {
 @media (max-width: 600px) {
   .rating li {
     margin: 10px 3px;
+  }
+
+  h1 {
+    font-size: xx-large;
   }
 
   .rating {
