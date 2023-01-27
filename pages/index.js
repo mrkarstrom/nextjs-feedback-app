@@ -1,27 +1,12 @@
-import { v4 as uuidv4 } from 'uuid';
 import Head from 'next/head';
-import { useState } from 'react';
 import Header from '../components/Header';
-import FeedbackData from '../data/FeedbackData';
 import FeedbackList from '../components/FeedbackList.jsx';
 import Card from '../components/shared/Card.jsx';
 import FeedbackStats from '../components/FeedbackStats';
 import FeedbackForm from '../components/FeedbackForm';
-import { FeedbackProvider } from '@/context/FeedbackContext';
+import { FeedbackProvider } from '../context/FeedbackContext';
 
 export default function Home() {
-  const [feedback, setFeedback] = useState(FeedbackData);
-
-  const addFeedback = (newFeedback) => {
-    newFeedback.id = uuidv4();
-    setFeedback([newFeedback, ...feedback]);
-  };
-
-  const deleteFeedback = (id) => {
-    if (window.confirm('Are you sure you want to delete?')) {
-      setFeedback(feedback.filter((item) => item.id !== id));
-    }
-  };
 
   return (
     <FeedbackProvider>
@@ -35,12 +20,12 @@ export default function Home() {
         <Header />
         <main>
           <div className="container">
-            <FeedbackForm handleAdd={addFeedback} />
+            <FeedbackForm  />
             <Card reverse>
               <h2>This is a Card Component</h2>
             </Card>
-            <FeedbackStats feedback={feedback} />
-            <FeedbackList handleDelete={deleteFeedback} />
+            <FeedbackStats />
+            <FeedbackList />
           </div>
         </main>
       </>
