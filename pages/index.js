@@ -1,13 +1,11 @@
 import Head from 'next/head';
 import Header from '../components/Header';
 import FeedbackList from '../components/FeedbackList.jsx';
-import Card from '../components/shared/Card.jsx';
 import FeedbackStats from '../components/FeedbackStats';
 import FeedbackForm from '../components/FeedbackForm';
 import { FeedbackProvider } from '../context/FeedbackContext';
 
 export default function Home() {
-
   return (
     <FeedbackProvider>
       <>
@@ -21,9 +19,7 @@ export default function Home() {
         <main>
           <div className="container">
             <FeedbackForm  />
-            <Card reverse>
-              <h2>This is a Card Component</h2>
-            </Card>
+            
             <FeedbackStats />
             <FeedbackList />
           </div>
