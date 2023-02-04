@@ -22,7 +22,7 @@ export const FeedbackProvider = ({ children }) => {
     setFeedback([newFeedback, ...feedback]);
   };
 
-  // Delete f´Feedback
+  // Delete feedback
   const deleteFeedback = (id) => {
     if (window.confirm('Are you sure you want to delete?')) {
       setFeedback(feedback.filter((item) => item.id !== id));
@@ -36,7 +36,7 @@ export const FeedbackProvider = ({ children }) => {
     );
   };
 
-  // Set item to update it
+  // Set item to be updated
   const editFeedback = (item) => {
     setFeedbackEdit({
       item,
