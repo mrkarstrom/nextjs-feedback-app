@@ -7,10 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "server": "json-server --watch db.json --port 5000"
+    "server": "json-server --watch db.json --port 5000",
+    "con": "concurrently \"npm run server\" \"npm run dev\""
   },
   "dependencies": {
     "@next/font": "13.1.2",
+    "concurrently": "^7.6.0",
     "eslint": "8.31.0",
     "eslint-config-next": "13.1.2",
     "json-server": "^0.17.1",
