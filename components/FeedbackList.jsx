@@ -1,5 +1,4 @@
 import { useContext } from 'react';
-// import PropTypes from 'prop-types';
 import FeedbackItem from './FeedbackItem';
 import Spinner from '@/components/shared/Spinner';
 import FeedbackContext from '@/context/FeedbackContext';
