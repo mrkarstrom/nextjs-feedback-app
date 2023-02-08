@@ -1,29 +1,14 @@
 {
   "feedback": [
     {
-      "id": 1,
-      "rating": 10,
-      "text": "This is from backend"
+      "text": "fgdfgdsfgdfgsdfg",
+      "rating": 7,
+      "id": 1
     },
     {
-      "id": 2,
-      "rating": 10,
-      "text": "This is from backend"
-    },
-    {
-      "id": 3,
-      "rating": 10,
-      "text": "This is from back"
-    },
-    {
-      "rating": "9",
-      "text": "This is awesome man!",
-      "id": 5
-    },
-    {
-      "text": "fdgsdfgdsfgfg",
-      "rating": 8,
-      "id": 6
+      "text": "gfsdgsdfgdfgdfg",
+      "rating": 9,
+      "id": 2
     }
   ]
 }
