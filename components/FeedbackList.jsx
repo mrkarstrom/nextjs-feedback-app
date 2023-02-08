@@ -1,7 +1,7 @@
 import { useContext } from 'react';
-import FeedbackItem from './FeedbackItem';
-import Spinner from '@/components/shared/Spinner';
-import FeedbackContext from '@/context/FeedbackContext';
+import FeedbackItem from './FeedbackItem.jsx';
+import Spinner from './shared/Spinner.jsx';
+import FeedbackContext from '../context/FeedbackContext.js';
 
 function FeedbackList() {
   const { feedback, isLoading } = useContext(FeedbackContext);
